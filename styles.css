@@ -21,7 +21,52 @@ body {
     color: var(--text-color);
     background-color: #f9f9f9;
 }
+/* Social Links Styles */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
 
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.social-links i {
+    font-size: 1.2rem;
+}
+
+.social-links span {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .social-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    
+    .social-links a {
+        width: 100%;
+        justify-content: center;
+    }
+}
 .name{
     font-size: 24px;
     color: white;
